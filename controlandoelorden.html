@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con cabecera en HTML</title>
+    <style>
+        .tabla{
+            display: grid;
+            grid-template-columns: repeat(3, 150px) ;
+            width: fit-content;
+            grid-gap: 2px;
+            margin:0  auto;
+        }
+        .tabla div{
+            color: white;
+            background-color: darkgrey;
+            padding: 18px;
+        }
+        .celda{
+         order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabla">
+    <div class="celda">celda 1</div>
+        <div class="celda2">celda 2</div>
+        <div class="celda3">celda 3</div>
+        <div class="celda4">celda 4</div>
+        <div class="celda5">celda 5</div>
+        <div class="celda6">celda 6</div>
+    </div>
+</body>
+</html>

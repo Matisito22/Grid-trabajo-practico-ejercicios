@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celdas vaciasen HTML</title>
+    <style>
+        .tabla div{
+    background: darkslategray;
+    color: white;
+    padding: 18px;
+  }
+
+  .tabla{
+    grid-gap: 1px;
+    width: 400px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-areas: 
+      '   .   celda1 celda1'
+      'celda2 celda3 celda3 '
+      'celda4 celda4 celda4 '   ;
+    display: grid;
+  } 
+
+  .tabla .celda1{ grid-area: celda1; text-align: center; background:darkgoldenrod }
+  .tabla .celda2{ grid-area: celda2; text-align: center;  }
+  .tabla .celda3{ grid-area: celda3}
+  .tabla .celda4{ grid-area: celda4; text-align: center; background:darkgray}
+    </style>
+</head>
+<body>
+    <div class="tabla">
+    <div class="celda1"> Celda 1 </div>
+  <div class="celda2"> Celda 2</div>
+  <div class="celda3"> Celda 3:<br>Contenido que marca l alto de la parte central de la página</div>
+  <div class="celda4"> Celda 4</div>
+</div>
+</body>
+</html>

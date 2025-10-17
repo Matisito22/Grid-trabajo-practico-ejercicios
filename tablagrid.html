@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con grid en HTML</title>
+    <style>
+        .tabla{
+            display: grid;
+            grid-template-columns: repeat(3, 150px) ;
+            grid-gap: 2px;
+        }
+        .tabla > div{
+            text-align: center;
+            color: white;
+            background-color: darkgrey;
+            padding: 18px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="tabla">
+        <div>celda 1</div>
+        <div>celda 2</div>
+        <div>celda 3</div>
+        <div>celda 4</div>
+        <div>celda 5</div>
+        <div>celda 6</div>
+        <div>celda 7</div>
+        <div>celda 8</div>
+        <div>celda 9</div>
+    </div>
+</body>
+</html>

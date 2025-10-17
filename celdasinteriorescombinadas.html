@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celdas interiores combinadas en HTML</title>
+</head>
+<style>
+    .tabla{
+        display:grid ;
+        grid-template: 
+      'celda1 celda1 celda2 celda2'
+      'celda3 celda4 celda4 celda4'
+      'celda5 celda5 celda5 celda5';
+    margin: 0 auto;
+        width: 500px;
+        grid-gap: 1px;
+    }
+    .tabla div{
+            text-align: center;
+            color: white;
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px;
+        }
+    .cabecera{
+        grid-row: 1;
+        grid-column: 5 / span 3;
+    }
+    .celda2{
+        grid-area: celda2
+    }
+    .celda3{
+        grid-area: celda3;
+    }
+    .celda4{
+        grid-area: celda4;
+    }
+    .celda5{
+        grid-area: celda5;
+    }
+</style>
+<body>
+     <div class="tabla">
+        <div class="celda1">celda 1</div>
+        <div class="celda2">celda 2</div>
+        <div class="celda3">celda 3</div>
+        <div class="celda4">celda 4</div>
+        <div class="celda5">celda 5</div>
+    </div>
+</body>
+</html>
